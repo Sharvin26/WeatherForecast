@@ -100,7 +100,7 @@ class _WeatherState extends State<Weather> {
             Map content = snapshot.data;
 
             return new Container(
-              padding: EdgeInsets.fromLTRB(160.0, 220.0, 0.0, 0.0),
+              padding: EdgeInsets.fromLTRB(140.0, 220.0, 0.0, 0.0),
               child: new Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -111,13 +111,6 @@ class _WeatherState extends State<Weather> {
                     ),
                   ),
 
-                  new ListTile(
-                    title: new Text(
-                          "Min: ${content['main']['temp_min'].toString()} ºC\n"
-                          "Max: ${content['main']['temp_max'].toString()} ºC",
-                      style: extraStyle() ,
-                    ),
-                  )
                 ],
               ),
             );
